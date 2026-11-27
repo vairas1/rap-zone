@@ -1,0 +1,9 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:fillColor="@color/rapzone_primary"
+        android:pathData="M14,6v16.53A16.88,16.88 0 0,1 12,24c-4.97,0 -9.04,-4.04 -9.95,-9.08A16.85,16.85 0 0,1 12,2c4.97,0 9.04,4.04 9.95,9.08A16.92,16.92 0 0,1 14,6zM10,4.5c-3.07,0 -5.61,2.5 -5.95,5.65A10.85,10.85 0 0,0 10,17c3.07,0 5.61,-2.5 5.95,-5.65A10.98,10.98 0 0,0 10,4.5zm0,3.5c1.93,0 3.5,1.57 3.5,3.5s-1.57,3.5 -3.5,3.5 -3.5,-1.57 -3.5,-3.5 1.57,-3.5 3.5,-3.5z"/>
+</vector>

@@ -1,0 +1,14 @@
+{
+  "name": "rap-zone-scripts",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Media generation (real MP3 + PNG art) and E2E tests for Rap Zone",
+  "scripts": {
+    "generate:media": "node generate-media.mjs",
+    "test:e2e": "node e2e.mjs"
+  },
+  "dependencies": {
+    "@breezystack/lamejs": "^1.2.7"
+  }
+}

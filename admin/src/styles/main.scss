@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap');
+
+$primary-color: #FF0000;
+$primary-light: #FF3333;
+$primary-dark: #CC0000;
+$bg-color: #000000;
+$surface-color: #121212;
+$surface-variant: #1E1E1E;
+$text-primary: #FFFFFF;
+$text-secondary: #B0B0B0;
+$border-color: #333333;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Cairo', sans-serif;
+  background-color: $bg-color;
+  color: $text-primary;
+  direction: rtl;
+}
+
+#app {
+  min-height: 100vh;
+}
+
+.el-container {
+  height: 100vh;
+}
+
+.el-aside {
+  background-color: $surface-color;
+  border-left: 1px solid $border-color;
+  color: $text-primary;
+}
+
+.el-header {
+  background-color: $surface-color;
+  border-bottom: 1px solid $border-color;
+  color: $text-primary;
+}
+
+.el-main {
+  background-color: $bg-color;
+  color: $text-primary;
+  overflow-y: auto;
+}
+
+.el-menu {
+  border-right: none;
+}
+
+.el-menu-item {
+  background-color: transparent !important;
+  color: $text-secondary !important;
+}
+
+.el-menu-item:hover {
+  background-color: $surface-variant !important;
+  color: $text-primary !important;
+}
+
+.el-menu-item.is-active {
+  background-color: rgba(255, 0, 0, 0.1) !important;
+  color: $primary-color !important;
+  border-right: 3px solid $primary-color;
+}
+
+.el-sub-menu__title:hover {
+  background-color: $surface-variant !important;
+  color: $text-primary !important;
+}
+
+.el-card {
+  background-color: $surface-color;
+  border: 1px solid $border-color;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.el-card__header {
+  border-bottom: 1px solid $border-color;
+  color: $text-primary;
+}
+
+.el-table {
+  color: $text-primary;
+}
+
+.el-table__header-wrapper {
+  background-color: $surface-variant;
+}
+
+.el-table th {
+  background-color: $surface-variant;
+  color: $text-primary;
+  border-bottom: 1px solid $border-color;
+}
+
+.el-table td {
+  border-bottom: 1px solid $border-color;
+}
+
+.el-table--enable-row-hover .el-table__body tr:hover > td {
+  background-color: $surface-variant;
+}
+
+.el-input__inner {
+  background-color: $surface-variant;
+  border: 1px solid $border-color;
+  color: $text-primary;
+}
+
+.el-input__inner:focus {
+  border-color: $primary-color;
+  box-shadow: 0 0 0 2px rgba(255, 0, 0, 0.2);
+}
+
+.el-select .el-input__inner {
+  background-color: $surface-variant;
+  border: 1px solid $border-color;
+}
+
+.el-pagination {
+  color: $text-secondary;
+}
+
+.el-button--primary {
+  background-color: $primary-color;
+  border-color: $primary-color;
+}
+
+.el-button--primary:hover {
+  background-color: $primary-light;
+  border-color: $primary-light;
+}
+
+.el-button--success {
+  background-color: #4CAF50;
+  border-color: #4CAF50;
+}
+
+.el-button--danger {
+  background-color: #F44336;
+  border-color: #F44336;
+}
+
+.el-dialog {
+  background-color: $surface-color;
+}
+
+.el-dialog__header {
+  border-bottom: 1px solid $border-color;
+}
+
+.el-dialog__body {
+  color: $text-primary;
+}
+
+.el-form-item__label {
+  color: $text-secondary;
+}
+
+.el-form-item__error {
+  color: #F44336;
+}
+
+.el-tag {
+  border-color: $border-color;
+}
+
+.breadcrumb {
+  margin-bottom: 20px;
+}
+
+.breadcrumb-item {
+  color: $text-secondary;
+}
+
+.breadcrumb-item.active {
+  color: $text-primary;
+}
+
+.stat-card {
+  background: linear-gradient(135deg, $surface-color 0%, $surface-variant 100%);
+  border: 1px solid $border-color;
+  border-radius: 12px;
+  padding: 24px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(255, 0, 0, 0.15);
+}
+
+.stat-card .stat-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.stat-card .stat-value {
+  font-size: 28px;
+  font-weight: 700;
+  color: $text-primary;
+  margin-bottom: 4px;
+}
+
+.stat-card .stat-label {
+  font-size: 14px;
+  color: $text-secondary;
+}
+
+.upload-area {
+  border: 2px dashed $border-color;
+  border-radius: 12px;
+  padding: 40px;
+  text-align: center;
+  transition: border-color 0.2s, background-color 0.2s;
+  cursor: pointer;
+}
+
+.upload-area:hover,
+.upload-area.active {
+  border-color: $primary-color;
+  background-color: rgba(255, 0, 0, 0.05);
+}
+
+.upload-area .upload-icon {
+  font-size: 48px;
+  color: $primary-color;
+  margin-bottom: 16px;
+}
+
+.upload-area .upload-text {
+  color: $text-secondary;
+  font-size: 16px;
+}
+
+.image-preview {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid $border-color;
+}
+
+.audio-player {
+  width: 100%;
+  margin-top: 12px;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.loading-skeleton {
+  background: linear-gradient(90deg, $surface-variant 25%, $border-color 50%, $surface-variant 75%);
+  background-size: 200% 100%;
+  animation: pulse 1.5s infinite;
+  border-radius: 8px;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.page-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: $text-primary;
+  margin: 0;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.search-box {
+  max-width: 400px;
+}
+
+.table-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.media-thumbnail {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: $text-secondary;
+}
+
+.empty-state .icon {
+  font-size: 64px;
+  margin-bottom: 16px;
+  opacity: 0.5;
+}
+
+.badge-published {
+  background-color: rgba(76, 175, 80, 0.2);
+  color: #4CAF50;
+  border: 1px solid rgba(76, 175, 80, 0.3);
+}
+
+.badge-unpublished {
+  background-color: rgba(244, 67, 54, 0.2);
+  color: #F44336;
+  border: 1px solid rgba(244, 67, 54, 0.3);
+}
+
+.badge-pending {
+  background-color: rgba(255, 152, 0, 0.2);
+  color: #FF9800;
+  border: 1px solid rgba(255, 152, 0, 0.3);
+}
+
+.chart-container {
+  width: 100%;
+  height: 300px;
+}
+
+/* RTL specific fixes */
+.el-dropdown-menu {
+  direction: rtl;
+}
+
+.el-select-dropdown {
+  direction: rtl;
+}
+
+.el-date-table {
+  direction: rtl;
+}

@@ -1,0 +1,23 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.RapZone" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/rapzone_primary</item>
+        <item name="colorPrimaryVariant">@color/rapzone_primary_dark</item>
+        <item name="colorOnPrimary">@color/rapzone_on_primary</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/rapzone_secondary</item>
+        <item name="colorSecondaryVariant">@color/rapzone_primary_dark</item>
+        <item name="colorOnSecondary">@color/rapzone_on_primary</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/rapzone_background</item>
+        <item name="android:navigationBarColor">@color/rapzone_background</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@color/rapzone_background</item>
+    </style>
+
+    <style name="Theme.RapZone.NoActionBar" parent="Theme.RapZone">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+</resources>

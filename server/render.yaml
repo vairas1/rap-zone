@@ -1,0 +1,30 @@
+# Render Blueprint — one-click deploy of the Rap Zone API.
+# Deploy: https://render.com -> New -> Blueprint -> select this repo.
+services:
+  - type: web
+    name: rapzone-api
+    runtime: node
+    rootDir: server
+    plan: free
+    buildCommand: npm install --no-audit --no-fund && npm run build
+    startCommand: node dist/main.js
+    healthCheckPath: /artists
+    disk:
+      name: rapzone-data
+      mountPath: /opt/render
+      sizeGB: 1
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: JWT_SECRET
+        generateValue: true
+      - key: ADMIN_EMAIL
+        value: admin@rapzone.app
+      - key: ADMIN_PASSWORD
+        value: "Admin@123"
+      - key: CORS_ORIGINS
+        value: "*"
+      - key: DB_FILE
+        value: /opt/render/dev.db
+      - key: MEDIA_ROOT
+        value: /opt/render/media

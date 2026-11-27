@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Rap Zone Brand Colors -->
+    <color name="rapzone_primary">#FF0000</color>
+    <color name="rapzone_primary_dark">#CC0000</color>
+    <color name="rapzone_primary_light">#FF3333</color>
+    <color name="rapzone_secondary">#FF3333</color>
+    <color name="rapzone_background">#000000</color>
+    <color name="rapzone_surface">#121212</color>
+    <color name="rapzone_surface_variant">#1E1E1E</color>
+    <color name="rapzone_on_primary">#FFFFFF</color>
+    <color name="rapzone_on_surface">#FFFFFF</color>
+    <color name="rapzone_on_surface_variant">#B0B0B0</color>
+    
+    <!-- System colors -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>
+    
+    <!-- Status colors -->
+    <color name="success">#4CAF50</color>
+    <color name="warning">#FF9800</color>
+    <color name="error">#F44336</color>
+    <color name="info">#2196F3</color>
+</resources>

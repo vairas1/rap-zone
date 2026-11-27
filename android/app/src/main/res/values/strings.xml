@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">Rap Zone</string>
+    <string name="app_name_short">Rap Zone</string>
+    
+    <!-- Home -->
+    <string name="featured_artists">أبرز الفنانين</string>
+    <string name="latest_albums">أحدث الألبومات</string>
+    <string name="latest_songs">أحدث الأغاني</string>
+    <string name="popular_songs">الأكثر استماعاً</string>
+    <string name="featured_playlists">قوائم تشغيل مميزة</string>
+    <string name="see_all">الكل</string>
+    
+    <!-- Artist -->
+    <string name="all_songs">جميع الأغاني</string>
+    <string name="albums">الألبومات</string>
+    <string name="total_plays">إجمالي الاستماع</string>
+    
+    <!-- Album -->
+    <string name="songs">الأغاني</string>
+    <string name="release_year">سنة الإصدار</string>
+    
+    <!-- Player -->
+    <string name="now_playing">جاري التشغيل</string>
+    <string name="play">تشغيل</string>
+    <string name="pause">إيقاف</string>
+    <string name="previous">السابق</string>
+    <string name="next">التالي</string>
+    <string name="shuffle">عشوائي</string>
+    <string name="repeat">تكرار</string>
+    <string name="queue">قائمة الانتظار</string>
+    <string name="lyrics">الكلمات</string>
+    
+    <!-- Search -->
+    <string name="search_hint">ابحث عن فنانين، ألبومات، أو أغاني</string>
+    <string name="search_results">نتائج البحث</string>
+    <string name="no_results">لا توجد نتائج</string>
+    
+    <!-- Settings -->
+    <string name="settings">الإعدادات</string>
+    <string name="account">الحساب</string>
+    <string name="profile">الملف الشخصي</string>
+    <string name="favorites">المفضلة</string>
+    <string name="history">سجل الاستماع</string>
+    <string name="playlists">قوائم التشغيل</string>
+    <string name="playback_download">التشغيل والتحميل</string>
+    <string name="download_high_quality">التحميل للجودة العالية فقط</string>
+    <string name="download_wifi_only">التحميل عبر WiFi فقط</string>
+    <string name="background_playback">التشغيل في الخلفية</string>
+    <string name="storage_management">إدارة المساحة</string>
+    <string name="appearance">المظهر</string>
+    <string name="dark_mode">الوضع الداكن</string>
+    <string name="language">اللغة</string>
+    <string name="about">حول</string>
+    <string name="version">إصدار التطبيق</string>
+    <string name="licenses">التراخيص</string>
+    <string name="privacy_policy">سياسة الخصوصية</string>
+    <string name="contact_us">تواصل معنا</string>
+    
+    <!-- General -->
+    <string name="loading">جاري التحميل...</string>
+    <string name="error">حدث خطأ</string>
+    <string name="retry">إعادة المحاولة</string>
+    <string name="guest">زائر</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="register">إنشاء حساب</string>
+    <string name="logout">تسجيل الخروج</string>
+    
+    <!-- Download -->
+    <string name="download">تحميل</string>
+    <string name="downloading">جاري التحميل</string>
+    <string name="downloaded">تم التحميل</string>
+    <string name="delete_download">حذف التحميل</string>
+    <string name="manage_downloads">إدارة التحميلات</string>
+    
+    <!-- Permissions -->
+    <string name="permission_storage">يحتاج التطبيق الوصول للتخزين لتحميل الأغاني</string>
+    <string name="permission_notification">يحتاج التطبيق إذن الإشعارات لعرض مشغل الموسيقى</string>
+
+    <!-- Playback service -->
+    <string name="notification_channel">Rap Zone – Now Playing</string>
+</resources>
