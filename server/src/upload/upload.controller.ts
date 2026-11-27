@@ -36,7 +36,7 @@ export class UploadController {
       cb(null, ok);
     },
   }))
-  async uploadAudio(@UploadedFile() file: Express.Multer.File, @Request() req: any) {
+  async uploadAudio(@UploadedFile() file: any, @Request() req: any) {
     if (!file) throw new BadRequestException('No audio file provided (expected .mp3)');
     const result = await this.upload.uploadAudio(file.path, file.originalname, req.user.email);
     return {
@@ -70,7 +70,7 @@ export class UploadController {
       cb(null, ok);
     },
   }))
-  async uploadImage(@UploadedFile() file: Express.Multer.File, @Request() req: any) {
+  async uploadImage(@UploadedFile() file: any, @Request() req: any) {
     if (!file) throw new BadRequestException('No image file provided (JPEG/PNG/WEBP)');
     const result = await this.upload.uploadImage(file.path, file.originalname, req.user.email);
     return {

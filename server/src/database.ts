@@ -8,7 +8,7 @@ let embeddedCleanup: (() => Promise<void>) | null = null;
 export async function bootstrapDatabase(): Promise<{ cleanup?: () => Promise<void> }> {
   // If USE_EMBEDDED_DB is explicitly true, use embedded postgres
   if (process.env.USE_EMBEDDED_DB === 'true') {
-    const EmbeddedPostgres = (await import('embedded-postgres')).default;
+    const EmbeddedPostgres = (await import('embedded-postgres' as any)).default;
     const dataDir = process.env.EMBEDDED_PG_DATA || path.join(process.cwd(), '.pgdata');
     const password = process.env.DB_PASSWORD || 'postgres';
 
