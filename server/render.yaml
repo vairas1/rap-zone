@@ -1,5 +1,10 @@
-# Render Blueprint — one-click deploy of the Rap Zone API.
+# Render Blueprint — one-click deploy of the Rap Zone API (free tier).
 # Deploy: https://render.com -> New -> Blueprint -> select this repo.
+# NOTE: free-tier services do not support persistent disks, so the SQLite DB
+# and local media live on the ephemeral filesystem. The app re-seeds itself
+# (admin account + demo content + sample media from scripts/output) on every
+# boot, so everything keeps working. Uploaded/admin-created data is reset
+# when the service redeploys.
 services:
   - type: web
     name: rapzone-api
@@ -9,10 +14,6 @@ services:
     buildCommand: npm install --no-audit --no-fund && npm run build
     startCommand: node dist/main.js
     healthCheckPath: /artists
-    disk:
-      name: rapzone-data
-      mountPath: /opt/render
-      sizeGB: 1
     envVars:
       - key: NODE_ENV
         value: production
@@ -24,7 +25,3 @@ services:
         value: "Admin@123"
       - key: CORS_ORIGINS
         value: "*"
-      - key: DB_FILE
-        value: /opt/render/dev.db
-      - key: MEDIA_ROOT
-        value: /opt/render/media

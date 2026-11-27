@@ -24,3 +24,6 @@ android/.idea/
 Thumbs.db
 .vscode/
 .idea/
+
+# APK artifact
+RapZone.apk

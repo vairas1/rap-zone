@@ -25,9 +25,9 @@ object AppConfig {
     /** Emulator: 10.0.2.2 aliases the host machine's localhost. */
     private const val DEFAULT_API_URL_EMULATOR = "http://10.0.2.2:4000/"
 
-    /** Real device: reach the dev PC over the local network (update if the PC's IP changes,
-     * or override it from Settings -> "رابط الخادم"). */
-    private const val DEFAULT_API_URL_DEVICE = "http://192.168.1.5:4000/"
+    /** Real device: point at the public Render-hosted API so the app works on any
+     * network/device. Override from Settings -> "رابط الخادم" if the URL changes. */
+    private const val DEFAULT_API_URL_DEVICE = "https://rapzone-api.onrender.com/"
 
     private fun isEmulator(): Boolean {
         val model = Build.MODEL.lowercase()
